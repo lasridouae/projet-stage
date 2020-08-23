@@ -1,0 +1,138 @@
+ 
+/*------------------------------------------------------------------
+    IMPORT FONTS
+-------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Paprika');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+
+
+
+
+/*------------------------------------------------------------------
+    SKELETON
+-------------------------------------------------------------------*/
+@font-face {
+    font-family: 'nautilus_pompiliusregular';
+    src: url('../fonts/nautilus-webfont.woff2') format('woff2'),
+         url('../fonts/nautilus-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+	color:#686868;
+	font-size:14px;
+	font-family: 'Roboto', sans-serif;
+	line-height:1.80857;
+}
+
+html, body{ height: 100%; }
+
+
+
+  /*------------------------------------------------------------------ All Pages -------------------------------------------------------------------*/
+  .testi-form{
+    background: url("../images/testimonial-bg.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    background-attachment: fixed;
+    padding: 70px 0px;
+    position: relative;
+  }
+  .testi-form::before{
+    background: rgba(0,0,0,0.6);
+    content: "";
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+  }
+
+  
+  /*------------------------------------------------------------------ testemonials form -------------------------------------------------------------------*/
+  
+  .contact-form-right{
+     padding: 20px;
+  }
+  .contact-form-right h2{
+     font-size: 24px;
+     font-weight: 700;
+  }
+  .contact-form-right p{
+     margin-bottom: 15px;
+  }
+  .contact-form-right .form-group .form-control::-moz-placeholder{
+     color: #999999;
+  }
+  .contact-form-right .form-group .form-control{
+     border-radius: 0px;
+     min-height: 40px;
+  }
+  .contact-form-right .form-group {
+     margin-bottom: 30px;
+     position: relative;
+  }
+  .contact-form-right .form-group .form-control:focus{
+     border: 1px solid #b0b435;
+     box-shadow: none;
+  }
+  .submit-button button{
+     padding: 10px 20px;
+     font-weight: 700;
+     color: #ffffff;
+     border: none;
+  }
+  
+  
+  .btn-custom {
+    margin-top: 20px;
+    background-color: transparent !important;
+    border: 2px solid #ddd;
+    padding: 12px 40px;
+    font-size: 16px;
+  }
+  .hvr-hover{
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    background: red;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .hvr-hover::after {
+   content: "";
+   position: absolute;
+   z-index: -1;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background: #000000;
+   border-radius: 100%;
+   -webkit-transform: scale(0);
+   transform: scale(0);
+   -webkit-transition-property: transform;
+   transition-property: transform;
+   -webkit-transition-duration: 0.3s;
+   transition-duration: 0.3s;
+   -webkit-transition-timing-function: ease-out;
+   transition-timing-function: ease-out;
+  }
+  
+  
+  
+  

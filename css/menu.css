@@ -1,11 +1,6 @@
-.menu-icon
-{
-    color: #fff;
-    font-size: 30px;
-    margin-top: 30px;
-    cursor: pointer;
+#menu-list{
+    background:#E6E6E6;
 }
-
 .menu-restaurant{
     width: 50%;
     float: left;
@@ -14,7 +9,6 @@
 }
 .menu-restaurant .menu-title {
     float: left;
-    font-family: Montserrat,arial;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: red;
@@ -64,4 +58,26 @@
     border: 1px solid #BBBBBB;
     text-decoration: none;
     cursor: pointer;
+}
+
+@media (min-width: 768px) and (max-width: 980px) {
+    .content-holder h2 {
+        font-size: 23px;
+    }
+    .details-text p {
+        line-height: 16.6px;
+    }
+}
+@media (min-width: 451px) and (max-width: 767px) {
+    .details-text {
+        border:0px;
+        border-bottom: 2px solid red;
+    }
+}
+@media (min-width: 20px) and (max-width: 450px) {
+    .menu-restaurant {
+    width: 100%;
+    }
+  
+
 }

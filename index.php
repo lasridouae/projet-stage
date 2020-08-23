@@ -1,3 +1,10 @@
+<?php include 'db.php' ?>
+<?php
+	$sql = "SELECT * from `testimonial`";
+     $result = mysqli_query($conn, $sql);  
+     
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -20,18 +27,20 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <!-- Site CSS -->
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/inst.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/apropos.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/services.css">
     <link rel="stylesheet" href="css/gallerie.css">
     <link rel="stylesheet" href="css/testimonials.css">
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css">
-    <!-- <link rel="stylesheet" href="css/animate.css">
-     <link rel="stylesheet" href="css/owl.carousel.css"> -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!--  <link rel="stylesheet" href="css/owl.carousel.css"> -->
 
     <!-- color -->
     <link rel="stylesheet" href="css/colors/red.css" />
@@ -50,8 +59,8 @@
             <div class="container">
                 <div class="row">
                     <div class="main-menu">
-                        <!-- navbar -->
-                        <nav class="navbar navbar-default" id="mainNav">
+            <!-- navbar -->
+            <nav class="navbar navbar-default" id="mainNav">
                             <div class="navbar-header">
                                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                                     <span class="sr-only">Toggle navigation</span>
@@ -62,19 +71,18 @@
                                 <div class="logo">
                                     <a class="navbar-brand js-scroll-trigger logo-header" href="#">
                                         <img src="images/logo2.png" alt="">
-                                    </a>
+                                        </a>
                                 </div>
                             </div>
                             <div id="navbar" class="navbar-collapse collapse">
                                 <ul class="nav navbar-nav navbar-right">
                                     <li class="active"><a href="#banner">Acceuil</a></li>
                                     <li><a href="#about">A propos</a></li>
-                                    <li><a href="#blog">Nos services</a></li>
-                                    <li><a href="#menu">Menu</a></li>
-                                    <li><a href="#our_team">Team</a></li>
-                                    <li><a href="#gallery">Gallerie</a></li>  
-                                    <li><a href="#pricing">pricing</a></li>
-                                    <li><a href="#footer">Contact us</a></li>
+                                    <li><a href="#services">Nos services</a></li>
+                                    <li><a href="#menu-list">Menu</a></li>
+                                    <li><a href="#testimonial">Testimonials</a></li>
+                                    <li><a href="#contact">Contactez-nous</a></li>
+ 
                                 </ul>
                             </div>
                             <!-- end nav-collapse -->
@@ -96,14 +104,8 @@
                 <div class="banner-static">
                     <div class="banner-text">
                         <div class="banner-cell">
-                            <h1>société restauration collective <br><span class="typer" id="some-id" data-delay="200" data-delim=":" data-words="KAFOOD" data-colors="red"></span><span class="cursor" data-cursorDisplay="_" data-owner="some-id"></span></h1>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod</p>
-                            <!-- <div class="book-btn">
-                                <a href="#reservation" class="table-btn hvr-underline-from-center">Book my Table</a>
-                            </div> -->
-                            <!-- <a href="#about">
-                                <div class="mouse"></div>
-                            </a> -->
+                            <h1>Société de restauration collective <br><span class="typer" id="some-id" data-delay="200" data-delim=":" data-words="KAFOOD" data-colors="red"></span><span class="cursor" data-cursorDisplay="_" data-owner="some-id"></span></h1>
+                        
                         </div>
                         <!-- end banner-cell -->
                     </div>
@@ -123,12 +125,26 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
                         <h2 class="block-title"> Qui sommes nous </h2>
-                        <h3>IT STARTED, QUITE SIMPLY, LIKE THIS...</h3>
-                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia, nostrud exercitation ullamco. </p>
+                        <h3>La vie d’aujourd’hui nous presse, nous stresse...</h3>
+                        <p> L’heure
+                        du déjeuner est un moment de rupture attendu par les
+                        convives, proposer chaque jour un repas plaisir, convivial
+                        et équilibré est la mission que relèvent au quotidien les
+                        professionnels de la gestion directe. KAFFOD partage
+                        avec vous cet objectif : renforcer la qualité des repas
+                        servis en collectivité pour une meilleure satisfaction de
+                        nos convives. </p>
 
-                        <p> Aenean commodo ligula eget dolor aenean massa. Cum sociis nat penatibu set magnis dis parturient montes, nascetur ridiculus mus. quam felisorat, ultricies nec, Aenean commodo ligula eget dolor penatibu set magnis is parturient montes, nascetur ridiculus mus. quam felisorat, ultricies nec, pellentesque eu, pretium quis, sem. quat massa quis enim. Donec vitae sapien ut libero venenatis fauci Nullam quis ante. Etiam sit amet rci eget eros. </p>
+                        <p>Personnes âgées, adultes, enfants, jeunes, personnes
+                        handicapés, malades, à chaque moment de sa vie une
+                        personne peut croiser une assiette préparée par un
+                        restaurant de collectivité en gestion directe. Les repas
+                        sont préparés chaque jour par une équipe inteégrant
+                        conjointement conscience et compétentes, qui inventent
+                        des nouveautés pour améliorer le quotidien des
+                        personnes. </p>
 
-                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia, nostrud exercitation ullamco. </p>
+                       
                     </div>
                 </div>
                 <!-- end col -->
@@ -146,96 +162,63 @@
         </div>
         <!-- end container -->
     </div>
-    <div id="blog" class="blog-main pad-top-100 pad-bottom-100 parallax">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <h2 class="block-title text-center">
-					Nos Services 	
-				</h2>
-                    <div class="blog-box clearfix">
-                        <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
-                            <div class="col-md-6 col-sm-6">
-                                <div class="blog-block">
-                                    <div class="blog-img-box">
-                                        <img src="images/featured-image-01.jpg" alt="" />
-                                    </div>
-                                    <div class="blog-dit">
-                                       
-                                        <h2>Le restauration des cantines scolaires</h2>
-                                       
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
-                            <div class="col-md-6 col-sm-6">
-                                <div class="blog-block">
-                                    <div class="blog-img-box">
-                                        <img src="images/featured-image-02.jpg" alt="" />
-                                        <div class="overlay">
-                                            <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="blog-dit">
-                                      
-                                        <h2>Les colonies de vacances</h2>
-                                     
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
-                            <div class="col-md-6 col-sm-6">
-                                <div class="blog-block">
-                                    <div class="blog-img-box">
-                                        <img src="images/featured-image-03.jpg" alt="" />
-                                        <div class="overlay">
-                                            <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="blog-dit">
-                                      <h2>La restauration hospitaliere</h2>  
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
-                            <div class="col-md-6 col-sm-6">
-                                <div class="blog-block">
-                                    <div class="blog-img-box">
-                                        <img src="images/featured-image-04.jpg" alt="" />
-                                        <div class="overlay">
-                                            <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="blog-dit">
-                                        <h2>Les mariages et événementielle</h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                    </div>
-                    <!-- end blog-box -->
-                </div>
-                <!-- end col -->
-            </div>
-            <!-- end row -->
+
+  <!--------------------- Services Section --------------------->
+  <div id="services" class="site-section ">
+      <div class="container">
+        <div class="row mb-5">
+        <div class="col-md-12 text-center marb-35">
+        <h2 class="block-title"> Nos Services </h2>
         </div>
-        <!-- end container -->
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-3">
+            <div class="service-29128 text-center">
+              <span class="d-block wrap-icon">
+                <span class="icon-desktop_mac"></span>
+              </span>
+              <h3>Web Design</h3>
+              <p>Lorem ipsum dolor sit amet. Consectetur adipisicing elit Eaque commodi.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="service-29128 text-center">
+              <span class="d-block wrap-icon">
+                <span class="icon-desktop_mac"></span>
+              </span>
+              <h3>Graphic Design</h3>
+              <p>Lorem ipsum dolor sit amet. Consectetur adipisicing elit Eaque commodi.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="service-29128 text-center">
+              <span class="d-block wrap-icon">
+                <span class="icon-desktop_mac"></span>
+              </span>
+              <h3>Web Apps</h3>
+              <p>Lorem ipsum dolor sit amet. Consectetur adipisicing elit Eaque commodi.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="service-29128 text-center">
+              <span class="d-block wrap-icon">
+                <span class="icon-desktop_mac"></span>
+              </span>
+              <h3>Ecommerce</h3>
+              <p>Lorem ipsum dolor sit amet. Consectetur adipisicing elit Eaque commodi.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- end blog-main -->
+    <!-- end Service -->
 
 <!-- menu -->
 <section id="menu-list" class="section-padding">
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center marb-35">
-          <h1 class="header-h">Menu List</h1>
+        <h2 class="block-title"> Nos Menu </h2>
           <p class="header-p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
             <br>nibh euismod tincidunt ut laoreet dolore magna aliquam. </p>
         </div>
@@ -243,9 +226,11 @@
         <div class="col-md-12  text-center" id="menu-flters">
           <ul>
             <li><a class="filter active" data-filter=".menu-restaurant">Show All</a></li>
-            <li><a class="filter" data-filter=".breakfast">Breakfast</a></li>
-            <li><a class="filter" data-filter=".lunch">Lunch</a></li>
-            <li><a class="filter" data-filter=".dinner">Dinner</a></li>
+            <li><a class="filter" data-filter=".breakfast">Nos Salades</a></li>
+            <!-- <li><a class="filter" data-filter=".dinner">Nos Plats Maisons</a></li>
+            <li><a class="filter" data-filter=".dinner">Boisson Et Jus</a></li> -->
+            <li><a class="filter" data-filter=".lunch">Nos Plats</a></li>
+            <li><a class="filter" data-filter=".dinner">Boisson Et Jus</a></li>
           </ul>
         </div>
 
@@ -253,36 +238,63 @@
 
           <div class="breakfast menu-restaurant">
             <span class="clearfix">
-              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <a class="menu-title" href="#" data-meal-img="">Salade Marocaine</a>
               <span style="left: 166px; right: 44px;" class="menu-line"></span>
-              <span class="menu-price">$20.99</span>
+              <span class="menu-price">16.00 DH</span>
             </span>
-            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+            <span class="menu-subtitle">Tomate, poivron vert assaisonné, laitue et olive </span>
           </div>
 
           <div class="breakfast menu-restaurant">
             <span class="clearfix">
-              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Salade italienne</a>
               <span style="left: 166px; right: 44px;" class="menu-line"></span>
-              <span class="menu-price">$20.99</span>
+              <span class="menu-price">18.00 DH</span>
             </span>
-            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+            <span class="menu-subtitle">Pâte, mais, thon et petit légumes assaisonné</span>
           </div>
 
           <div class="breakfast menu-restaurant">
             <span class="clearfix">
-              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <a class="menu-title" href="#" data-meal-img="">Salade Composé au fromage</a>
               <span style="left: 166px; right: 44px;" class="menu-line"></span>
-              <span class="menu-price">$20.99</span>
+              <span class="menu-price">20.00 DH</span>
             </span>
-            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+            <span class="menu-subtitle">Variétés de légumes, fromage blanc</span>
           </div>
 
           <div class="breakfast menu-restaurant">
             <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Salade KA FOOD (Menu Malin)</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">22.00 DH</span>
+            </span>
+            <span class="menu-subtitle">Variétés de légumes, cube de poulet et fromage</span>
+          </div>
+
+          <div class="lunch menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="">Poulet Grillé</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">27.00 DH</span>
+            </span>
+            <span class="menu-subtitle">Poulet grillée, riz blanc garni & frites, sauce marocaine</span>
+          </div>
+
+          <div class="lunch menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="">Tajine traditionnelle</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">30.00 DH</span>
+            </span>
+            <span class="menu-subtitle">Poulet, boeuf ou viande hachée fait maison et légumes du jour</span>
+          </div>
+
+          <div class="lunch menu-restaurant">
+            <span class="clearfix">
               <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
               <span style="left: 166px; right: 44px;" class="menu-line"></span>
-              <span class="menu-price">$20.99</span>
+              <span class="menu-price">20.99DH</span>
             </span>
             <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
           </div>
@@ -304,7 +316,46 @@
             </span>
             <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
           </div>
-
+          <div class="lunch menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">$20.99</span>
+            </span>
+            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+          </div>
+          <div class="lunch menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">$20.99</span>
+            </span>
+            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+          </div>
+          <div class="lunch menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">$20.99</span>
+            </span>
+            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+          </div>
+          <div class="lunch menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">$20.99</span>
+            </span>
+            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+          </div>
+          <div class="lunch menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">$20.99</span>
+            </span>
+            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+          </div>
           <div class="lunch menu-restaurant">
             <span class="clearfix">
               <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
@@ -314,50 +365,33 @@
             <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
           </div>
 
-          <div class="lunch menu-restaurant">
+      
+          <div class="dinner menu-restaurant">
             <span class="clearfix">
-              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <a class="menu-title" href="#" data-meal-img="">Soda 25 cl</a>
               <span style="left: 166px; right: 44px;" class="menu-line"></span>
-              <span class="menu-price">$20.99</span>
+              <span class="menu-price">6.00 DH</span>
             </span>
-            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
-          </div>
-
-          <div class="lunch menu-restaurant">
-            <span class="clearfix">
-              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
-              <span style="left: 166px; right: 44px;" class="menu-line"></span>
-              <span class="menu-price">$20.99</span>
-            </span>
-            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+            <!-- <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span> -->
           </div>
 
           <div class="dinner menu-restaurant">
             <span class="clearfix">
-              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <a class="menu-title" href="#" data-meal-img="">Soda 33 cl</a>
               <span style="left: 166px; right: 44px;" class="menu-line"></span>
-              <span class="menu-price">$20.99</span>
+              <span class="menu-price">10.00 DH</span>
             </span>
-            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+            <!-- <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span> -->
           </div>
-
           <div class="dinner menu-restaurant">
             <span class="clearfix">
-              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <a class="menu-title" href="#" data-meal-img="">Jus de friuts </a>
               <span style="left: 166px; right: 44px;" class="menu-line"></span>
-              <span class="menu-price">$20.99</span>
+              <span class="menu-price">10.00 DH</span>
             </span>
-            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+            <span class="menu-subtitle">(selen arrivage)</span>
           </div>
 
-          <div class="dinner menu-restaurant">
-            <span class="clearfix">
-              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
-              <span style="left: 166px; right: 44px;" class="menu-line"></span>
-              <span class="menu-price">$20.99</span>
-            </span>
-            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
-          </div>
         </div>
 
       </div>
@@ -373,7 +407,7 @@
 
                     <div class="col-md-12 col-sm-12">
                          <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
-                              <h2>Testimonials</h2>
+                              <h2 class="block-title"> Testimonials </h2>
                          </div>
                     </div>  
 
@@ -383,7 +417,7 @@
                                    <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum ullamcorper nulla non.</p>
                                         <div class="tst-author">
                                              <h4>Digital Carlson</h4>
-                                             <span>Pharetra quam sit amet</span>
+                                             
                                         </div>
                               </div>
 
@@ -391,7 +425,7 @@
                                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed vestibulum orci quam.</p>
                                         <div class="tst-author">
                                              <h4>Johnny Stephen</h4>
-                                             <span>Magna nisi porta ligula</span>
+                                            
                                         </div>
                               </div>
 
@@ -399,7 +433,7 @@
                                    <p>Vivamus aliquet felis eu diam ultricies congue. Morbi porta lorem nec consectetur porta quis dui elit habitant morbi.</p>
                                         <div class="tst-author">
                                              <h4>Jessie White</h4>
-                                             <span>Vitae lacinia augue urna quis</span>
+                                            
                                         </div>
                               </div>
 
@@ -409,293 +443,9 @@
                </div>
           </div>
      </section>
-        <!-- <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
-                        <h2 class="block-title text-center">
-						Our Team 	
-					</h2>
-                        <p class="title-caption text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
-                    </div>
-                    <div class="team-box">
-
-                        <div class="row">
-                            <div class="col-md-4 col-sm-6">
-                                <div class="sf-team">
-                                    <div class="thumb">
-                                        <a href="#"><img src="images/staff-01.jpg" alt=""></a>
-                                    </div>
-                                    <div class="text-col">
-                                        <h3>John Doggett</h3>
-                                        <p>Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Aenean commodo ligula.</p>
-                                      
-                                    </div>
-                                </div>
-                            </div> -->
-                            <!-- end col 
-                            <div class="col-md-4 col-sm-6">
-                                <div class="sf-team">
-                                    <div class="thumb">
-                                        <a href="#"><img src="images/staff-02.jpg" alt=""></a>
-                                    </div>
-                                    <div class="text-col">
-                                        <h3>Jeffrey Spender</h3>
-                                        <p>Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Aenean commodo ligula.</p>
-                                      
-                                    </div>
-                                </div>
-                            </div>
-                            end col 
-                            <div class="col-md-4 col-sm-6">
-                                <div class="sf-team">
-                                    <div class="thumb">
-                                        <a href="#"><img src="images/staff-03.jpg" alt=""></a>
-                               about     </div>
-                                    <div class="text-col">
-                                        <h3>Monica Reyes</h3>
-                                        <p>Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Aenean commodo ligula.</p>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                             end col 
-                            <div class="col-md-4 col-sm-6">
-                                <div class="sf-team">
-                                    <div class="thumb">
-                                        <a href="#"><img src="images/staff-02.jpg" alt=""></a>
-                                    </div>
-                                    <div class="text-col">
-                                        <h3>Jeffrey Spender</h3>
-                                        <p>Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Aenean commodo ligula.</p>
-                                      
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        end row 
-
-                    </div>
-                    end team-box 
-
-                </div>
-                 end col 
-            </div>
-             end row 
-        </div>
-       end container 
-    </div>
-    end team-main -->
-
-    <div id="gallery" class="gallery-main pad-top-100 pad-bottom-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
-                        <h2 class="block-title text-center">
-						Nos Gallerie
-					</h2>
-                        <p class="title-caption text-center">There are many variations of passages of Lorem Ipsum available </p>
-                    </div>
-                    <div class="gal-container clearfix">
-                        <div class="col-md-8 col-sm-12 co-xs-12 gal-item">
-                            <div class="box">
-                                <a href="#" data-toggle="modal" data-target="#1">
-                                    <img src="img/gal1.jpg" alt="" />
-                                </a>
-                                <div class="modal fade" id="1" tabindex="-1" role="dialog">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                                            <div class="modal-body">
-                                                <img src="img/gal1.jpg" alt="" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
-                            <div class="box">
-                                <a href="#" data-toggle="modal" data-target="#2">
-                                    <img src="img/gal2.jpg" alt="" />
-                                </a>
-                                <div class="modal fade" id="2" tabindex="-1" role="dialog">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                                            <div class="modal-body">
-                                                <img src="img/gal2.jpg" alt="" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
-                            <div class="box">
-                                <a href="#" data-toggle="modal" data-target="#3">
-                                    <img src="img/gal3.jpg" alt="" />
-                                </a>
-                                <div class="modal fade" id="3" tabindex="-1" role="dialog">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                                            <div class="modal-body">
-                                                <img src="img/gal3.jpg" alt="" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
-                            <div class="box">
-                                <a href="#" data-toggle="modal" data-target="#4">
-                                    <img src="img/gal4.jpg" alt="" />
-                                </a>
-                                <div class="modal fade" id="4" tabindex="-1" role="dialog">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                                            <div class="modal-body">
-                                                <img src="img/gal4.jpg" alt="" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
-                            <div class="box">
-                                <a href="#" data-toggle="modal" data-target="#5">
-                                    <img src="img/gal5.jpg" alt="" />
-                                </a>
-                                <div class="modal fade" id="5" tabindex="-1" role="dialog">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                                            <div class="modal-body">
-                                                <img src="img/gal5.jpg" alt="" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
-                            <div class="box">
-                                <a href="#" data-toggle="modal" data-target="#9">
-                                    <img src="img/gal6.jpg" alt="" />
-                                </a>
-                                <div class="modal fade" id="9" tabindex="-1" role="dialog">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                                            <div class="modal-body">
-                                                <img src="img/gal6.jpg" alt="" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-8 col-sm-12 co-xs-12 gal-item">
-                            <div class="box">
-                                <a href="#" data-toggle="modal" data-target="#10">
-                                    <img src="img/gal7.jpg" alt="" />
-                                </a>
-                                <div class="modal fade" id="10" tabindex="-1" role="dialog">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                                            <div class="modal-body">
-                                                <img src="img/gal7.jpg" alt="" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
-                            <div class="box">
-                                <a href="#" data-toggle="modal" data-target="#11">
-                                    <img src="img/gal8.jpg" alt="" />
-                                </a>
-                                <div class="modal fade" id="11" tabindex="-1" role="dialog">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                                            <div class="modal-body">
-                                                <img src="img/gal8.jpg" alt="" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
-                            <div class="box">
-                                <a href="#" data-toggle="modal" data-target="#12">
-                                    <img src="img/gal9.jpg" alt="" />
-                                </a>
-                                <div class="modal fade" id="12" tabindex="-1" role="dialog">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                                            <div class="modal-body">
-                                                <img src="img/gal9.jpg" alt="" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
-                            <div class="box">
-                                <a href="#" data-toggle="modal" data-target="#13">
-                                    <img src="img/gal10.jpg" alt="" />
-                                </a>
-                                <div class="modal fade" id="13" tabindex="-1" role="dialog">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                                            <div class="modal-body">
-                                                <img src="img/gal10.jpg" alt="" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end gal-container -->
-                </div>
-                <!-- end col -->
-            </div>
-            <!-- end row -->
-        </div>
-        <!-- end container -->
-    </div>
-    <!-- end gallery-main -->
-
-    
+      
   
-  <section id="contact" class="section-wrapper contact-section" data-stellar-background-ratio="0.5">
-    <div class="parallax-overlay"></div>
-        <div class="container">
-            <div class="row">
 
-                <!-- Section Header -->
-              <div class="col-md-12 col-sm-12 col-xs-12 section-header wow fadeInDown">
-                    <h2><span class="highlight-text">Contactes-nous</span></h2>
-                   
-                    <p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">We love feedback. Fill out the form below and we'll get back to you as soon as possible. in minus distinctio dolores ipsam.</p>
-                </div>  
-                <!-- Section Header End -->
-
-                <div class="contact-details"> 
- 
      <!-- CONTACT -->
      <section id="contact" data-stellar-background-ratio="0.5">
         <div class="container">
@@ -712,18 +462,22 @@
 
                        <div class="col-md-12 col-sm-12">
                             <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
-                                 <h2>Contact Us</h2>
+                            <h2 class="block-title"> Contactez nous </h2>
                             </div>
                        </div>
 
                        <!-- CONTACT FORM -->
-                       <form action="#" method="post" class="wow fadeInUp" id="contact-form" role="form" data-wow-delay="0.8s">
+
+
+
+
+                       <form action="contact.php" method="post" class="wow fadeInUp" id="contact-form" role="form" data-wow-delay="0.8s">
 
                             <!-- IF MAIL SENT SUCCESSFUL  // connect this with custom JS -->
-                            <h6 class="text-success">Your message has been sent successfully.</h6>
+                            <!-- <h6 class="text-success">Your message has been sent successfully.</h6> -->
                             
                             <!-- IF MAIL NOT SENT -->
-                            <h6 class="text-danger">E-mail must be valid and message must be longer than 1 character.</h6>
+                            <!-- <h6 class="text-danger">E-mail must be valid and message must be longer than 1 character.</h6> -->
 
                             <div class="col-md-6 col-sm-6">
                                  <input type="text" class="form-control" id="cf-name" name="name" placeholder="Full name">
@@ -747,84 +501,228 @@
         </div>
    </section>          
 
-
-   <!-- FOOTER -->
-   <footer id="footer" data-stellar-background-ratio="0.5">
-        <div class="container">
-             <div class="row">
-             <div class="col-md-3 col-sm-8">
-                       <div class="footer-info">
-                            <div class="section-title">
-                                 <h2 class="wow fadeInUp" data-wow-delay="0.2s">Apropos</h2>
-                            </div>
-                            <address class="wow fadeInUp" data-wow-delay="0.4s">
-                                 
-                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem molestiae,fugiat cumque magnam porro voluptate nisi assumenda! </p>
-                            </address>
-                       </div>
-                  </div>
-                  <div class="col-md-3 col-sm-8">
-                       <div class="footer-info">
-                            <div class="section-title">
-                                 <h2 class="wow fadeInUp" data-wow-delay="0.2s">Adresse</h2>
-                            </div>
-                            <address class="wow fadeInUp" data-wow-delay="0.4s">
-                                 <p>938 cité Grouppement AL Aahd, Rabat, Rabat 10050</p>
-                            </address>
-                       </div>
-                  </div>
-
-            
-
-                  <div class="col-md-4 col-sm-8">
-                       <div class="footer-info footer-open-hour">
-                            <div class="section-title">
-                                 <h2 class="wow fadeInUp" data-wow-delay="0.2s">Open Hours</h2>
-                            </div>
-                            <div class="wow fadeInUp" data-wow-delay="0.4s">
-                                 <p>Monday: Closed</p>
-                                 <div>
-                                      <strong>Tuesday to Friday</strong>
-                                      <p>7:00 AM - 9:00 PM</p>
-                                 </div>
-                                 <div>
-                                      <strong>Saturday - Sunday</strong>
-                                      <p>11:00 AM - 10:00 PM</p>
-                                 </div>
-                            </div>
-                       </div>
-                  </div>
-
-                  <div class="col-md-2 col-sm-4">
-                       <ul class="wow fadeInUp social-icon" data-wow-delay="0.4s">
-                            <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
-                            <li><a href="#" class="fa fa-instagram"></a></li>
-                       </ul>
-
-                       <div class="wow fadeInUp copyright-text" data-wow-delay="0.8s"> 
-                            <p><br>Copyright &copy; 2020 <br>KAFOOD
-                            
-                          
-                       </div>
-                  </div>
-                  
-             </div>
+  <!-- Start Instagram Feed  -->
+  <div  class="instagram-box">
+    <div class="main-instagram owl-carousel owl-theme">
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="images/1.jpg" alt="" />
+                <div class="hov-in">
+                    <a href="https://www.instagram.com/kafood_sarl/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
         </div>
-   </footer>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="images/2.jpg" alt="" />
+                <div class="hov-in">
+                    <a href="https://www.instagram.com/kafood_sarl/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
         </div>
-        <!-- end footer-box -->
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="images/3.jpg" alt="" />
+                <div class="hov-in">
+                    <a href="https://www.instagram.com/kafood_sarl/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="images/4.jpg" alt="" />
+                <div class="hov-in">
+                    <a href="https://www.instagram.com/kafood_sarl/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="images/6.jpg" alt="" />
+                <div class="hov-in">
+                    <a href="https://www.instagram.com/kafood_sarl/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="images/9.jpg" alt="" />
+                <div class="hov-in">
+                    <a href="https://www.instagram.com/kafood_sarl/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="img/7.jpg" alt="" />
+                <div class="hov-in">
+                    <a href="https://www.instagram.com/kafood_sarl/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="images/6.jpg" alt="" />
+                <div class="hov-in">
+                    <a href="https://www.instagram.com/kafood_sarl/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="images/9.jpg" alt="" />
+                <div class="hov-in">
+                    <a href="https://www.instagram.com/kafood_sarl/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="images/5.jpg" alt="" />
+                <div class="hov-in">
+                    <a href="https://www.instagram.com/kafood_sarl/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
+<!-- End Instagram Feed  -->
+   <!-- FOOTER -->
+   
+   <div class="footer-box pad-top-70">
+    <div class="container">
+        <div class="row">
+            <div class="footer-in-main">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="footer-box-a">
+                        <h3>About Us</h3>
+                        <p>Aenean commodo ligula eget dolor aenean massa. Cum sociis nat penatibu set magnis dis parturient montes.</p>
+                        <ul class="socials-box footer-socials pull-left">
+                            <li>
+                                <a href="#">
+                                    <div class="social-circle-border"><i class="fa  fa-facebook"></i></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="social-circle-border"><i class="fa fa-twitter"></i></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="social-circle-border"><i class="fa fa-google-plus"></i></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="social-circle-border"><i class="fa fa-pinterest"></i></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="social-circle-border"><i class="fa fa-linkedin"></i></div>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- end footer-box-a -->
+                </div>
+                <!-- end col -->
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="footer-box-b">
+                        <h3>New Menu</h3>
+                        <ul>
+                            <li><a href="#">Italian Bomba Sandwich</a></li>
+                            <li><a href="#">Double Dose of Pork Belly</a></li>
+                            <li><a href="#">Spicy Thai Noodles</a></li>
+                            <li><a href="#">Triple Truffle Trotters</a></li>
+                        </ul>
+                    </div>
+                    <!-- end footer-box-b -->
+                </div>
+                <!-- end col -->
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="footer-box-c">
+                        <h3>Contact Us</h3>
+                        <p>
+                            <i class="fa fa-map-signs" aria-hidden="true"></i>
+                            <span>938 cité Grouppement AL Aahd, Rabat, Rabat 10050</span>
+                        </p>
+                        <p>
+                            <i class="fa fa-mobile" aria-hidden="true"></i>
+                            <span>
+                                0663-502070
+                        </span>
+                        </p>
+                        <p>
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <span><a href="#">kafood@ymail.com </a></span>
+                        </p>
+                    </div>
+                    <!-- end footer-box-c -->
+                </div>
+                <!-- end col -->
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="footer-box-d">
+                        <h3>Opening Hours</h3>
+
+                        <ul>
+                            <li>
+                                <p>lundi - vendredi </p>
+                                <span> 09:00 AM - 17:00 PM</span>
+                            </li>
+                            <li>
+                                <p> Samedi </p>
+                                <span>  09:00 AM - 16:00 PM</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- end footer-box-d -->
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end footer-in-main -->
+        </div>
+        <!-- end row -->
+    </div>
+    <!-- end container -->
+    <div id="copyright" class="copyright-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h6 class="copy-title"> Copyright &copy; 2020 KAFOOD Sarl <a href="#" target="_blank"></a> </h6>
+                </div>
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end copyright-main -->
+<!-- </div> -->
+<!-- end footer-box -->
+<!-- </div> -->
+
     
 
     <a href="#" class="scrollup" style="display: none;">Scroll</a>
 
   
 
-    <!-- ALL JS FILES -->
-    <script src="js/all.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!-- ALL PLUGINS -->
-    <script src="js/custom.js"></script>
+   <!-- ALL JS FILES -->
+   <script src="js/all.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/jquery.min.js"></script> 
+   <script src="js/jquery-3.2.1.min.js"></script>
+        <!-- ALL PLUGINS -->
+        <script src="js/typer.js"></script>
+        <script src="js/jquery.superslides.min.js"></script>
+        <script src="js/inewsticker.js"></script>
+        <script src="js/images-loded.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/baguetteBox.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -1,111 +1,11 @@
-/* -------- Contact Style ------- */
-/* #contact-form {
-	margin: 0 auto;
-}
-
-.contact-section .contact-address p{
-	margin-bottom: 25px;
-}
-
-.contact-section .contact-address ul li{
-	padding-left: 40px;
-	margin-bottom: 25px;
-	font-size: 14px;
-	position: relative;
-}
-
-.contact-section .contact-address ul li:last-child{
-	margin-bottom: 0;
-}
-
-.contact-section .contact-address ul li i{
-	position: absolute;
-	font-size: 18px;
-	left: 0;
-	top: 3px;
-	padding: 5px;
-	width: 30px;
-	text-align: center;
-	height: 30px;
-	border-radius: 50px;
-}
-.contact-section .contact-form .input-fields{
-	margin-bottom: 20px;
-}
-
-.contact-section .contact-form .input-fields label{
-	display: block;
-	font-size: 14px;
-	font-family: 'Raleway',cursive;
-	font-weight: 400;
-	margin-bottom: 10px;
-}
-
-.contact-section .contact-form .input-fields input{
-	width: 100%;
-	height: 60px;
-	background-color: transparent;
-	border: 1px solid #aaa !important;
-	padding-left: 15px;
-	padding-right: 15px;
-	border: none;
-	color: #111 !important;
-}
-.contact-details ul li {
-	color: #F00 !important;
-	padding-top: 0;
-}
-.contact-details i {
-	margin-right: 10px;
-	font-size: 22px;
-}
-.contact-section .contact-form .input-fields textarea{
-	width: 100%;
-	background-color: transparent;
-	border: 1px solid #aaa !important;
-	padding: 15px;
-	border: none;
-	color: #111111 !important;
-}
-
-.contact-section .contact-form input[type='submit']{
-	font-size: 14px;
-	font-weight: 700;
-	color: #ffffff;
-	padding: 15px 30px;
-	text-align: center;
-	display: inline-block;
-	outline: 0;
-	border: 0px solid;
-	width: 100%;
-	background: #089EF5;
-}
-
-
-.contact-section .contact-form .input-fields input[type='submit']:hover{
-	color: #ffffff;
-	background-color: #d71921;
-}
-
-
-
-.contact-section{
-	-webkit-background-size: cover;
-	background-size: cover;
-	position: relative;
-	padding: 100px 0;
-	overflow: hidden;
-}
-.contact-section .contact-address {
-    margin-bottom: 50px;
-  } */
 
   /*---------------------------------------
       CONTACT             
   -----------------------------------------*/
 
   #contact .section-title {
-    padding-bottom: 0;
+	padding-bottom: 0;
+	color: #d71921;
   }
 
   #contact .text-success,
@@ -147,253 +47,180 @@
     background: #292929;
     color: #ffffff;
   }
-
-
-
-  /*---------------------------------------
-     FOOTER              
-  -----------------------------------------*/
-
-  footer {
-    color: rgba(0, 0, 0, 0.1);
-    border-top: 1px solid rgba(0,0,0,0.05);
-    padding: 120px 0;
-    padding-bottom: 80px;
-  }
-
-  footer .section-title {
-    padding-bottom: 10px;
-  }
-
-  footer h2 {
-    font-size: 20px;
-  }
-
-  footer a,
-  footer p {
-    color: #909090;
-  }
-
-  footer strong {
-    color: #d9d9d9;
-  }
-
-  footer address p {
-    margin-bottom: 0;
-  }
-
-  .footer-info,
-  footer .social-icon {
-    margin-top: 20px;
-  }
-
-  .footer-open-hour {
-    background: #ce3232;
-    background: url('../images/footer-open-hour-bg.jpg') center center no-repeat;
-    background-size: cover;
-    border-radius: 20px;
-    margin-top: 0;
-    padding: 40px 0 40px 80px;
-    overflow: hidden;
-    position: relative;
-    z-index: 22;
-    right: 20px;
-    bottom: 20px;
-  }
-
-  .footer-open-hour::after {
-    background: rgba(29,29,29,0.85);
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+  #google-map iframe {
+    border: 0;
     width: 100%;
-    height: 100%;
-    z-index: -2222;
-  }
-
-  .footer-open-hour h2 {
-    color: #ffffff;
-  }
-
-  .footer-open-hour p {
-    color: #d9d9d9;
-  }
-
-  .footer-open-hour strong {
-    color: #f9f9f9;
+    height: 390px;
   }
 
 
 
-  /*---------------------------------------
-     SOCIAL ICON              
-  -----------------------------------------*/
+/*------------------------------------------------------------------
+    FOOTER AREA
+-------------------------------------------------------------------*/
 
-  .social-icon {
-    position: relative;
-    padding: 0;
-    margin: 0;
-  }
 
-  .social-icon li {
-    display: inline-block;
-    list-style: none;
-    margin-bottom: 5px;
-  }
 
-  .social-icon li a {
-    border-radius: 100px;
-    color: #ce3232;
-    font-size: 15px;
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
-    text-decoration: none;
+.footer-logo{
+	padding-bottom:40px;
+}
+
+.footer-socials {
+    margin: 10px 0;
+    line-height: 30px;
+    padding: 4px;
     text-align: center;
-    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.socials-box {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 1px 0px;
+    padding: 4px;
+}
+.footer-box {
+	background-image:-moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.57) 0%,rgba(0, 0, 0, 0.87) 100%), url(..images/footer_background.jpg);
+	background-image:-webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.57) 0%,rgba(0, 0, 0, 0.87) 100%), url(../images/footer_background.jpg);
+	background-image:radial-gradient(ellipse at center, rgba(0, 0, 0, 0.57) 0%,rgba(0, 0, 0, 0.87) 100%), url(../images/footer_background.jpg);
+	background-color:#111;background-position:center;background-repeat:no-repeat;background-size:cover
+	}
+.socials-box li {
+    display: inline-block;
+    opacity: 1;
+    margin-right: 7px;
+}
+.footer-box .social-circle-border{
+	background-color: transparent;
+	color: #fff;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.social-circle-border {
+    font-size: 20px;
+    line-height: 23px;
+    margin-right: 2px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: transparent;
+    color: #6f6f6f;
+    text-align: center;
+}
+
+
+.footer-box-a h3{
+	font-size:24px;
+    font-family: 'nautilus_pompiliusregular';
+}
+.footer-box-a p{
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+	color:#ffffff;
+	line-height: 25px;
+}
+
+
+.footer-box-b h3{
+	font-size:24px;
+    font-family: 'nautilus_pompiliusregular';
+}
+.footer-box-b p{
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+	color:#ffffff;
+}
+.footer-box-b ul li{
+	line-height:30px;
+}
+.footer-box-b ul li a{
+	color:#ffffff;
+}
+
+.footer-box-b ul li a:hover{
+	padding-left:5px;
+}	
+
+.footer-box-c h3{
+	font-size:24px;
+    font-family: 'nautilus_pompiliusregular';
+}
+.footer-box-c p{
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+	color:#ffffff;
+}
+
+
+.footer-box-c p i{
+	font-size: 20px;
     position: relative;
-  }
+    top: 4px;
+    float: left;
+    min-width: 20px;
+    text-align: center;
+}
 
-  .social-icon li a:hover {
-    background: #ce3232;
-    color: #ffffff;
-  }
+.footer-box-c p span{
+	display: table;
+    padding-left: 12px;
+	padding-top:1px;
+}
 
-
-
-  /*---------------------------------------
-     RESPONSIVE STYLES              
-  -----------------------------------------*/
-
-  @media screen and (max-width: 1170px) {
-    .custom-navbar .navbar-nav.navbar-nav-first {
-      margin-left: inherit;
-    }
-  }
+.footer-box-c p a{
+	color:#ffffff;
+}
 
 
-  @media only screen and (max-width: 1200px) {
-    .about-info {
-      padding-right: 0;
-    }
 
-    .about-image {
-      position: relative;
-    }
-  }
+.footer-box-d h3{
+	font-size:24px;
+    font-family: 'nautilus_pompiliusregular';
+}
+.footer-box-d p{
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+	color:#ffffff;
+}
 
+.footer-box-d ul{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+.footer-box-d ul li{
+	display: inline-block;
+    width: 100%;
+	padding-bottom:12px;
+}
+.footer-box-d ul li p{
+	padding:0px;
+	margin:0px;
+}
+.footer-box-d ul li span{
+	color: #666;
+}
 
-  @media only screen and (max-width: 992px) {
-    section {
-      padding: 60px 0;
-    }
+/*------------------------------------------------------------------
+    COPYRIGHT AREA
+-------------------------------------------------------------------*/
 
-    .custom-navbar .section-btn {
-      margin-left: 1em;
-    }
+.copyright-main{
+	border-top: 2px dotted #fff;
+	text-align:center;
+	padding-top:25px;
+	margin-top:70px;
+	padding-bottom:25px;
+}
 
-    .slider .item {
-      background-position: center;
-    }
-
-    .about-info {
-      padding: 0;
-    }
-
-    .team-info {
-      margin-bottom: 50px;
-    }
-
-    #menu .menu-thumb {
-      width: 103%;
-    }
-
-    #testimonial {
-      background-position: 50% 0 !important;
-    }
-
-    #google-map,
-    .footer-info {
-      margin-bottom: 50px;
-    }
-  }
-
-
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .custom-navbar .nav li a {
-      padding-right: 10px;
-      padding-left: 10px;
-    }
-  }
-
-  @media only screen and (max-width: 767px) {
-    h1 {
-      font-size: 2.5em;
-    }
-
-    h1,h2,h3 {
-      line-height: normal;
-    }
-
-    .custom-navbar {
-      background: #ffffff;
-      -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
-      -moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
-      box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
-      padding: 10px 0;
-      text-align: center;
-    }
-
-    .custom-navbar .nav li a {
-      line-height: normal;
-      padding: 10px;
-    }
-
-    .custom-navbar .navbar-brand,
-    .top-nav-collapse .navbar-brand {
-      color: #252525;
-      font-weight: 600;
-    }
-
-    .custom-navbar .nav li a,
-    .top-nav-collapse .nav li a {
-      color: #575757;
-    }
-
-    .custom-navbar .navbar-nav.navbar-right li {
-      display: inline-block;
-    }
-
-    .custom-navbar .navbar-nav.navbar-right .section-btn {
-      display: block !important;
-      width: 50%;
-      margin: 10px auto 10px auto;
-      padding: 10px;
-    }
-
-    .custom-navbar .section-btn a {
-      color: #ffffff !important;
-    }
-
-    .slider .caption {
-      padding: 0;
-    }
-
-    .menu-thumb .menu-info {
-      top: 80%;
-    }
-
-    footer {
-      padding: 60px 0;
-      padding-bottom: 60px;
-    }
-
-    .footer-open-hour {
-      right: 0;
-      bottom: 0;
-      margin-top: 30px;
-    }
-  }
+.copyright-main .copy-title{
+	letter-spacing: 1px;
+	color:#fff;
+	font-family: 'Roboto', sans-serif;
+	font-size:14px;
+	padding-bottom:0px;
+}

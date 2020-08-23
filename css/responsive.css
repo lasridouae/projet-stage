@@ -1,11 +1,3 @@
-/******************************************
-    File Name: responsive.css
-    Template Name: Landigoo
-    Created By: MelodyThemes
-    Envato Profile: http://themeforest.net/user/melodythemes
-    Website: https://melodythemes.com
-    Version: 1.0
-/****************************************** */
 
 @media (max-width: 1310px) {}
 @media (max-width: 1200px) {
@@ -260,45 +252,19 @@
 		border-radius: 50%;
 		background-position: 2px 4px;
 	}
-	.tab-menu .slick-arrow.slick-prev:hover{
-		background:#e75b1e url(../images/back_hover.png) no-repeat center;
-		background-position: 2px 4px;
-	}
-	.tab-menu .slick-arrow.slick-next{
-		position:absolute;
-		top: -36px;
-		right:0px;
-		background: #e75b1e url(../images/next.png) no-repeat center;
-		text-indent: -99999px;
-		border:none;
-		width: 32px;
-		height: 32px;
-		border-radius: 50%;
-		background-position: 7px 4px;
-	}
-	.tab-menu .slick-arrow.slick-next:hover{
-		background:#e75b1e url(../images/next_hover.png) no-repeat center;
-		background-position: 7px 4px;
-	}
-	.sf-team{
-		margin-bottom:20px;
-	}
+
+	
 	.blog-img-box {
 		float: none;
 		width: 100%;
 	}
-	.pricing-main p{
-		padding:0px 15px;
-		margin-bottom:15px;
-	}
+	
 	
 	.blog-dit{
 		width: 100%;
 		padding: 10px 2% 0 2%;
 	}
-	.form-reservations-box{
-		width: 100%;
-	}
+
 	
 	.footer-box-a, .footer-box-b, .footer-box-c, .footer-box-d{
 		margin-bottom:20px;
