@@ -1,0 +1,276 @@
+
+/*------------------------------------------------------------------
+    IMPORT FONTS
+-------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Paprika');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+
+
+
+
+/*------------------------------------------------------------------
+    SKELETON
+-------------------------------------------------------------------*/
+@font-face {
+    font-family: 'nautilus_pompiliusregular';
+    src: url('../fonts/nautilus-webfont.woff2') format('woff2'),
+         url('../fonts/nautilus-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+	color:#686868;
+	font-size:14px;
+	font-family: 'Roboto', sans-serif;
+	line-height:1.80857;
+}
+
+ul, li, ol{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+
+a {
+    color: #1f1f1f;
+    text-decoration: none;
+    outline: none !important;
+}
+
+
+html, body{ height: 100%; }
+
+
+
+a {
+  text-decoration: none !important;
+    outline: none !important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+
+
+
+/*==================
+ HEADER SECTION
+====================*/
+#mu-header {
+  left: 0;
+  right: 0;
+  top: 0;
+  position: fixed;
+  z-index: 999;
+}
+
+/*==================
+ NAVBAR SECTION
+====================*/
+.mu-main-navbar {
+  background-color: transparent;
+  border: none;
+  padding: 25px 0;
+  border-radius: 0;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.mu-main-navbar .mu-main-nav {
+  font-family: 'Roboto', sans-serif;
+}
+.mu-main-navbar .mu-main-nav li a {
+  color: #fff;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.mu-main-navbar .mu-main-nav .dropdown-menu {
+  background-color: #b5b5b5;
+  border-radius: 0;
+}
+.mu-main-navbar .mu-main-nav .dropdown-menu li a {
+  padding: 10px 20px;
+}
+.mu-main-navbar .navbar-header .navbar-brand {
+  padding: 0;
+  margin-top: 8px;
+  height: 34px;
+  width: 145px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.mu-main-navbar .navbar-header .navbar-brand img {
+  width: 100%;
+  height: 100%;
+}
+.mu-main-navbar .navbar-header .navbar-brand-small {
+  height: 20px;
+  margin-top: 16px;
+  width: 105px;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  background-color: transparent;
+  
+}
+
+.navbar-bg {
+  background-color: rgba(0, 0, 0, 0.10);
+  padding: 10px 0;
+}
+
+
+
+/*------------------------------------------------------------------
+    BANNER AREA
+-------------------------------------------------------------------*/
+
+.banner{
+	background:url(../images/banner.jpg) no-repeat center top;
+	background-attachment:fixed;
+	background-size:cover;
+	height:100vh;
+	min-height:100%;
+}
+
+.banner .container, .banner .banner-static, .banner .col-lg-12 {
+    height: 100%;
+}
+.banner-text {
+    display: table;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.banner-cell {
+    display: table-cell;
+    vertical-align: middle;
+    color: #fff;
+}
+.banner-text h1 {
+	font-family: 'nautilus_pompiliusregular';
+    letter-spacing: 2.7px;
+    position: relative;
+    display: inline-block;
+	font-size: 74px;
+    line-height: 100px;
+	color:#fff;
+	padding-bottom: 0px;
+	padding-top:100px;
+}
+
+.banner-text h2 {
+	font-family: 'nautilus_pompiliusregular';
+    letter-spacing: 2.7px;
+    position: relative;
+	font-size: 37px;
+    line-height: 100px;
+	padding-bottom:25px;
+}
+.banner-text p{
+	font-family: 'Roboto', sans-serif;
+	font-size:18px;
+	color:#ccc;
+	padding-bottom:35px;
+	margin:0px;
+}
+
+
+/*==================
+ RESPONSIVE DESIGN
+====================*/
+@media (max-width: 1199px) {
+  .mu-main-navbar .mu-main-nav li a {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #mu-slider .mu-slider-area .mu-top-slider .mu-top-slider-single img {
+    width: auto;
+  }
+
+}
+@media (max-width: 991px) {
+  .mu-main-navbar .mu-main-nav li a {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 14px;
+  }
+
+  .mu-main-navbar .navbar-header .navbar-brand {
+    height: 30px;
+    width: 115px;
+  }
+
+  .mu-main-navbar .navbar-header .navbar-brand-small {
+    height: 25px;
+    margin-top: 13px;
+    width: 110px;
+  }
+
+  .mu-abtus-slider .slick-slide img {
+    display: block;
+    width: 100%;
+  }
+
+ 
+
+  
+}
+@media (max-width: 767px) {
+  .navbar-default .navbar-toggle {
+    border-color: #fff;
+    border-radius: 0px;
+  }
+
+  .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #fff;
+  }
+
+  .mu-main-navbar .mu-main-nav {
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    background-color: #fff;
+  }
+
+}
+@media (max-width: 640px) {
+  .navbar-default .navbar-toggle {
+    border-color: #fff;
+    border-radius: 0px;
+  }
+
+  .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #fff;
+  }
+
+  #mu-slider .mu-slider-area .mu-top-slider .mu-top-slider-single .mu-top-slider-content .mu-slider-title {
+    font-size: 50px;
+    line-height: 75px;
+  }
+
+  .mu-main-navbar .mu-main-nav {
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+  }
+
+  .mu-main-navbar .mu-main-nav li a {
+    font-size: 18px;
+  }
+
+}
