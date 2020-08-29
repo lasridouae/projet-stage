@@ -53,8 +53,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <!-- LOGO -->                                                        
-          <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="Logo img"></a> 
+          <!-- LOGO -->                                       <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="Logo img"></a> 
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav navbar-right mu-main-nav">
