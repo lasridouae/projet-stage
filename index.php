@@ -17,41 +17,32 @@
     
 
     <!-- Site Icons -->
-    <link rel="shortcut icon" href="images/logo1.jpg" type="image/icon" />
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/icon" />
    
 
     <!-- Bootstrap CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css"> -->
     <!-- Site CSS -->
-    <link rel="stylesheet" href="assets/css/services.css">
-    <link rel="stylesheet" href="assets/css/inst.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/apropos.css">
-    <link rel="stylesheet" href="assets/css/menu.css">
-    <link rel="stylesheet" href="assets/css/contact.css">
-    <link rel="stylesheet" href="assets/css/gallerie.css">
-    <link rel="stylesheet" href="assets/css/testimonials.css">
+    <link rel="stylesheet" href="assets/css/inst.css">
+
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/animate.css">
-    <!--  <link rel="stylesheet" href="css/owl.carousel.css"> -->
+     <!-- <link rel="stylesheet" href="assets/css/owl.carousel.css"> -->
 
     <!-- color -->
-    <link rel="stylesheet" href="css/colors/red.css" />
-
-    <!-- Modernizer -->
-    <!-- <script src="js/modernizer.js"></script> -->
-
-   
+    <link rel="stylesheet" href="css/colors/red.css"/>
 
 </head>
 
 <body>
   
    <!-- Start header section -->
-  <header id="mu-header">  
+  <header id="mu-header"class="header-block-top" >  
     <nav class="navbar navbar-default mu-main-navbar" role="navigation">  
       <div class="container">
         <div class="navbar-header">
@@ -63,16 +54,17 @@
             <span class="icon-bar"></span>
           </button>
           <!-- LOGO -->                                                        
-          <a class="navbar-brand" href=""><img src="assets/img/logo.png" alt="Logo img"></a> 
+          <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="Logo img"></a> 
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav navbar-right mu-main-nav">
             <li><a href="#banner">Acceuil</a></li>
-            <li><a href="#mu-about-us">Apropos</a></li>                       
-            <li><a href="#mu-restaurant-menu">Nos Service</a></li>                       
-            <li><a href="#mu-reservation">Menu</a></li>                       
-            <li><a href="#mu-gallery">Testimonials</a></li>
-            <li><a href="#mu-chef">contactez-nous</a></li>
+            <li><a href="#about">Apropos</a></li>                       
+            <li><a href="#services">Nos Service</a></li> 
+            <li><a href="#menu-list">Menu</a></li>
+            <li><a href="#gallery">Gallerie</a></li>                                               
+            <li><a href="#testimonial">Testimonials</a></li>
+            <li><a href="#contact">contactez-nous</a></li>
             
           </ul>                            
         </div><!--/.nav-collapse -->       
@@ -159,7 +151,7 @@
         <span class="d-block wrap-icon">
           <span class="icon-desktop_mac"></span>
         </span>
-        <h3>Web Design</h3>
+        <h3>La restauration des cantines scolaires</h3>
         <p>Lorem ipsum dolor sit amet. Consectetur adipisicing elit Eaque commodi.</p>
       </div>
     </div>
@@ -168,7 +160,7 @@
         <span class="d-block wrap-icon">
           <span class="icon-desktop_mac"></span>
         </span>
-        <h3>Graphic Design</h3>
+        <h3>Les colonies de vacances</h3>
         <p>Lorem ipsum dolor sit amet. Consectetur adipisicing elit Eaque commodi.</p>
       </div>
     </div>
@@ -177,7 +169,7 @@
         <span class="d-block wrap-icon">
           <span class="icon-desktop_mac"></span>
         </span>
-        <h3>Web Apps</h3>
+        <h3>La restauration hospitaliere</h3>
         <p>Lorem ipsum dolor sit amet. Consectetur adipisicing elit Eaque commodi.</p>
       </div>
     </div>
@@ -186,7 +178,7 @@
         <span class="d-block wrap-icon">
           <span class="icon-desktop_mac"></span>
         </span>
-        <h3>Ecommerce</h3>
+        <h3>Les mariages et événementielle</h3>
         <p>Lorem ipsum dolor sit amet. Consectetur adipisicing elit Eaque commodi.</p>
       </div>
     </div>
@@ -381,8 +373,200 @@
 </section>
 <!--/ menu -->
 
+<div id="gallery" class="gallery-main pad-top-100 pad-bottom-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <h2 class="block-title text-center">
+						Nos Gallerie
+					</h2>
+                        <p class="title-caption text-center">There are many variations of passages of Lorem Ipsum available </p>
+                    </div>
+                    <div class="gal-container clearfix">
+                        <div class="col-md-8 col-sm-12 co-xs-12 gal-item">
+                            <div class="box">
+                                <a href="#" data-toggle="modal" data-target="#1">
+                                    <img src="assets/img/gal1.jpg" alt="" />
+                                </a>
+                                <div class="modal fade" id="1" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                            <div class="modal-body">
+                                                <img src="assets/img/gal1.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                            <div class="box">
+                                <a href="#" data-toggle="modal" data-target="#2">
+                                    <img src="assets/img/gal2.jpg" alt="" />
+                                </a>
+                                <div class="modal fade" id="2" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                            <div class="modal-body">
+                                                <img src="assets/img/gal2.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                            <div class="box">
+                                <a href="#" data-toggle="modal" data-target="#3">
+                                    <img src="assets/img/gal3.jpg" alt="" />
+                                </a>
+                                <div class="modal fade" id="3" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                            <div class="modal-body">
+                                                <img src="assets/img/gal3.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                            <div class="box">
+                                <a href="#" data-toggle="modal" data-target="#4">
+                                    <img src="assets/img/gal4.jpg" alt="" />
+                                </a>
+                                <div class="modal fade" id="4" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                            <div class="modal-body">
+                                                <img src="assets/img/gal5.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                            <div class="box">
+                                <a href="#" data-toggle="modal" data-target="#5">
+                                    <img src="assets/img/gal5.jpg" alt="" />
+                                </a>
+                                <div class="modal fade" id="5" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                            <div class="modal-body">
+                                                <img src="assets/img/gal5.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                            <div class="box">
+                                <a href="#" data-toggle="modal" data-target="#9">
+                                    <img src="assets/img/gal6.jpg" alt="" />
+                                </a>
+                                <div class="modal fade" id="9" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                            <div class="modal-body">
+                                                <img src="assets/img/gal6.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-12 co-xs-12 gal-item">
+                            <div class="box">
+                                <a href="#" data-toggle="modal" data-target="#10">
+                                    <img src="assets/img/gal7.jpg" alt="" />
+                                </a>
+                                <div class="modal fade" id="10" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                            <div class="modal-body">
+                                                <img src="assets/img/gal7.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                            <div class="box">
+                                <a href="#" data-toggle="modal" data-target="#11">
+                                    <img src="assets/img/gal8.jpg" alt="" />
+                                </a>
+                                <div class="modal fade" id="11" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                            <div class="modal-body">
+                                                <img src="assets/img/gal8.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                            <div class="box">
+                                <a href="#" data-toggle="modal" data-target="#12">
+                                    <img src="assets/img/gal9.jpg" alt="" />
+                                </a>
+                                <div class="modal fade" id="12" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                            <div class="modal-body">
+                                                <img src="assets/img/gal9.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                            <div class="box">
+                                <a href="#" data-toggle="modal" data-target="#13">
+                                    <img src="assets/img/gal10.jpg" alt="" />
+                                </a>
+                                <div class="modal fade" id="13" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                            <div class="modal-body">
+                                                <img src="assets/img/gal10.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end gal-container -->
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end gallery-main -->
+
       <!-- TESTIMONIAL -->
-<section id="testimonial" data-stellar-background-ratio="0.5">
+<section id="testimonial" class="slider" data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
     <div class="container">
          <div class="row">
@@ -472,98 +656,19 @@ $result = mysqli_query($conn, $sql);
   </div>
 </section>          
 
-<!-- Start Instagram Feed  -->
-<div  class="instagram-box">
-<div class="main-instagram owl-carousel owl-theme">
-  <div class="item-1">
-      <div class="ins-inner-box">
-          <img src="assets/images/1.jpg" alt="" />
-          <div class="hov-in">
-              <a href="https://www.instagram.com/kafood_sarl/"><i class="fab fa-instagram"></i></a>
-          </div>
-      </div>
-  </div>
-  <div class="item-1">
-      <div class="ins-inner-box">
-          <img src="assets/images/2.jpg" alt="" />
-          <div class="hov-in">
-              <a href="https://www.instagram.com/kafood_sarl/"><i class="fab fa-instagram"></i></a>
-          </div>
-      </div>
-  </div>
-  <div class="item-1">
-      <div class="ins-inner-box">
-          <img src="assets/images/3.jpg" alt="" />
-          <div class="hov-in">
-              <a href="https://www.instagram.com/kafood_sarl/"><i class="fab fa-instagram"></i></a>
-          </div>
-      </div>
-  </div>
-  <div class="item-1">
-      <div class="ins-inner-box">
-          <img src="assets/images/4.jpg" alt="" />
-          <div class="hov-in">
-              <a href="https://www.instagram.com/kafood_sarl/"><i class="fab fa-instagram"></i></a>
-          </div>
-      </div>
-  </div>
-  <div class="item-1">
-      <div class="ins-inner-box">
-          <img src="assets/images/6.jpg" alt="" />
-          <div class="hov-in">
-              <a href="https://www.instagram.com/kafood_sarl/"><i class="fab fa-instagram"></i></a>
-          </div>
-      </div>
-  </div>
-  <div class="item-1">
-      <div class="ins-inner-box">
-          <img src="assets/images/9.jpg" alt="" />
-          <div class="hov-in">
-              <a href="https://www.instagram.com/kafood_sarl/"><i class="fab fa-instagram"></i></a>
-          </div>
-      </div>
-  </div>
-  <div class="item-1">
-      <div class="ins-inner-box">
-          <img src="assets/img/7.jpg" alt="" />
-          <div class="hov-in">
-              <a href="https://www.instagram.com/kafood_sarl/"><i class="fab fa-instagram"></i></a>
-          </div>
-      </div>
-  </div>
-  <div class="item-1">
-      <div class="ins-inner-box">
-          <img src="assets/images/6.jpg" alt="" />
-          <div class="hov-in">
-              <a href="https://www.instagram.com/kafood_sarl/"><i class="fab fa-instagram"></i></a>
-          </div>
-      </div>
-  </div>
-  <div class="item-1">
-      <div class="ins-inner-box">
-          <img src="assets/images/9.jpg" alt="" />
-          <div class="hov-in">
-              <a href="https://www.instagram.com/kafood_sarl/"><i class="fab fa-instagram"></i></a>
-          </div>
-      </div>
-  </div>
-  <div class="item-1">
-      <div class="ins-inner-box">
-          <img src="assets/images/5.jpg" alt="" />
-          <div class="hov-in">
-              <a href="https://www.instagram.com/kafood_sarl/"><i class="fab fa-instagram"></i></a>
-          </div>
-      </div>
-  </div>
-</div>
-</div>
-<!-- End Instagram Feed  -->
 <!-- FOOTER -->
 
-<div class="footer-box pad-top-70">
-<div class="container">
+<div id="footer" class="footer-main">
+  <!-- end footer-news -->
+ <div class="footer-box pad-top-70">
+ <div class="container">
   <div class="row">
       <div class="footer-in-main">
+        <div class="footer-logo">
+          <div class="text-center">
+              <img src="assets/img/log.png" alt="" />
+          </div>
+      </div>
           <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
               <div class="footer-box-a">
                   <h3>About Us</h3>
@@ -602,12 +707,10 @@ $result = mysqli_query($conn, $sql);
           <!-- end col -->
           <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
               <div class="footer-box-b">
-                  <h3>New Menu</h3>
+                  <h3>témoignages</h3>
+                  <p>si vous pouvez laisser vos témoignages</p>
                   <ul>
-                      <li><a href="#">Italian Bomba Sandwich</a></li>
-                      <li><a href="#">Double Dose of Pork Belly</a></li>
-                      <li><a href="#">Spicy Thai Noodles</a></li>
-                      <li><a href="#">Triple Truffle Trotters</a></li>
+                      <li><a href="testimonials.php" class="btn"> vous pouvez cliquer ici</a></li>
                   </ul>
               </div>
               <!-- end footer-box-b -->
@@ -680,22 +783,17 @@ $result = mysqli_query($conn, $sql);
 
 
 
-<!-- ALL JS FILES -->
+
+<!-- ALL PLUGINS -->
+<script src="assets/js/jquery.js"></script>
 <script src="assets/js/all.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/jquery.min.js"></script> 
-<script src="assets/js/jquery-3.2.1.min.js"></script>
-<script src="assets/assets/js/jquery.min.js"></script>
-  <!-- ALL PLUGINS -->
-  <script src="assets/js/typer.js"></script>
-  <script src="assets/js/jquery.superslides.min.js"></script>
-  <script src="assets/js/inewsticker.js"></script>
-  <script src="assets/js/images-loded.min.js"></script>
-  <script src="assets/js/owl.carousel.min.js"></script>
-  <script src="assets/js/baguetteBox.min.js"></script>
-  <script src="assets/js/app.js"></script>
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/custom.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+ <!-- ALL JS FILES --> 
+ <script src="assets/js/typer.js"></script>
+ <script src="assets/js/app.js"></script>
+ <script src="assets/js/custom.js"></script>
 </body>
 
 </html>

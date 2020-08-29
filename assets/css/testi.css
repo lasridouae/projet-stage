@@ -1,4 +1,5 @@
 
+/* LAYOUTS - Page layout styles */
 /*==================
  HEADER SECTION
 ====================*/
@@ -25,7 +26,7 @@
   transition: all 0.5s;
 }
 .mu-main-navbar .mu-main-nav {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 .mu-main-navbar .mu-main-nav li a {
   color: #fff;
@@ -36,7 +37,7 @@
   transition: all 0.5s;
 }
 .mu-main-navbar .mu-main-nav .dropdown-menu {
-  background-color: #b5b5b5;
+  background-color: #333;
   border-radius: 0;
 }
 .mu-main-navbar .mu-main-nav .dropdown-menu li a {
@@ -65,20 +66,60 @@
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   background-color: transparent;
-  
 }
 
 .navbar-bg {
-  background-color: rgba(0, 0, 0, 0.10);
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 10px 0;
 }
+
+/* ALL SECTION */
+
+/*scrol to top*/
+.scrollToTop {
+  bottom: 60px;
+  color: #fff;
+  display: none;
+  font-size: 17px;
+  line-height: 22px;
+  font-family: "Open Sans", sans-serif;
+  padding: 5px 0;
+  position: fixed;
+  right: 20px;
+  text-align: center;
+  text-decoration: none;
+  width: 55px;
+  z-index: 999;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.scrollToTop i {
+  display: block;
+}
+.scrollToTop span {
+  display: block;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.scrollToTop:hover,
+.scrollToTop:focus {
+  color: #fff;
+}
+
+
+
 
 /*==================
  BLOG PAGE
 ====================*/
 #mu-blog-banner {
   background-attachment: fixed;
-  background-image: url("assets/img/testi.jpg");
+  background-image: url("img/testi.jpg");
   background-position: center center;
   background-size: cover;
   display: inline;
