@@ -78,7 +78,7 @@
             <div class="banner-static">
                 <div class="banner-text">
                     <div class="banner-cell">
-                        <h1>Société de restauration collective <br><span class="typer" id="some-id" data-delay="200" data-delim=":" data-words="KAFOOD" data-colors="red"></span><span class="cursor" data-cursorDisplay="_" data-owner="some-id"></span></h1>
+                        <h1>Société de réstauration collective <br><span class="typer" id="some-id" data-delay="200" data-delim=":" data-words="KAFOOD" data-colors="red"></span><span class="cursor" data-cursorDisplay="_" data-owner="some-id"></span></h1>
                     
                     </div>
                     <!-- end banner-cell -->
@@ -755,6 +755,9 @@ $result = mysqli_query($conn, $sql);
           </div>
           <!-- end col -->
       </div>
+      <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+        <a href="#banner"><img src="assets/images/icon_top.png" > </a>
+      </div>
       <!-- end footer-in-main -->
   </div>
   <!-- end row -->
@@ -789,6 +792,8 @@ $result = mysqli_query($conn, $sql);
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/jquery.min.js"></script> 
 <script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/vendors/jquery_3.4.1.js"></script>
+<script src="assets/js/vendors/link.min.js"></script>
  <!-- ALL JS FILES --> 
  <script src="assets/js/typer.js"></script>
  <script src="assets/js/app.js"></script>
