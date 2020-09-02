@@ -53,7 +53,8 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <!-- LOGO -->                                       <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="Logo img"></a> 
+          <!-- LOGO -->  
+          <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="Logo img"></a> 
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav navbar-right mu-main-nav">
@@ -147,36 +148,26 @@
   <div class="row">
     <div class="col-md-6 col-lg-3">
       <div class="service-29128 text-center">
-        <span class="d-block wrap-icon">
-          <span class="icon-desktop_mac"></span>
-        </span>
+       
         <h3>La restauration des cantines scolaires</h3>
         <p>Lorem ipsum dolor sit amet. Consectetur adipisicing elit Eaque commodi.</p>
       </div>
     </div>
     <div class="col-md-6 col-lg-3">
       <div class="service-29128 text-center">
-        <span class="d-block wrap-icon">
-          <span class="icon-desktop_mac"></span>
-        </span>
+      
         <h3>Les colonies de vacances</h3>
         <p>Lorem ipsum dolor sit amet. Consectetur adipisicing elit Eaque commodi.</p>
       </div>
     </div>
     <div class="col-md-6 col-lg-3">
       <div class="service-29128 text-center">
-        <span class="d-block wrap-icon">
-          <span class="icon-desktop_mac"></span>
-        </span>
         <h3>La restauration hospitaliere</h3>
         <p>Lorem ipsum dolor sit amet. Consectetur adipisicing elit Eaque commodi.</p>
       </div>
     </div>
     <div class="col-md-6 col-lg-3">
       <div class="service-29128 text-center">
-        <span class="d-block wrap-icon">
-          <span class="icon-desktop_mac"></span>
-        </span>
         <h3>Les mariages et événementielle</h3>
         <p>Lorem ipsum dolor sit amet. Consectetur adipisicing elit Eaque commodi.</p>
       </div>

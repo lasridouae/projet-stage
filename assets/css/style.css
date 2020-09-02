@@ -862,7 +862,7 @@ section {
       opacity: 1;
       margin-right: 7px;
   }
-  .footer-box .social-circle-border{
+  .footer-box-a .social-circle-border{
     background-color: transparent;
     color: #d71921;
     -webkit-transition: all 0.3s ease;
