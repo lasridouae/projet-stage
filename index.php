@@ -23,8 +23,7 @@
     <!-- Bootstrap CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="assets/css/all.css">
-    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css"> -->
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css"> 
     <!-- Site CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/inst.css">
@@ -32,17 +31,17 @@
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/animate.css">
-     <!-- <link rel="stylesheet" href="assets/css/owl.carousel.css"> -->
+     <link rel="stylesheet" href="assets/css/owl.carousel.css">
 
     <!-- color -->
-    <link rel="stylesheet" href="css/colors/red.css"/>
+    <!-- <link rel="stylesheet" href="css/colors/red.css"/> -->
 
 </head>
 
 <body>
   
    <!-- Start header section -->
-  <header id="mu-header"class="header-block-top" >  
+  <header id="mu-header" >  
     <nav class="navbar navbar-default mu-main-navbar" role="navigation">  
       <div class="container">
         <div class="navbar-header">
@@ -54,7 +53,7 @@
             <span class="icon-bar"></span>
           </button>
           <!-- LOGO -->  
-          <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="Logo img"></a> 
+          <a class="navbar-brand" href="index.php"><img src="assets/img/logo.png" alt="Logo img"></a> 
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav navbar-right mu-main-nav">
@@ -561,7 +560,7 @@
     <div class="container">
          <div class="row">
          <?php
-$sql = "SELECT * from `testimonial`";
+$sql = "SELECT * from `testimonials`";
 $result = mysqli_query($conn, $sql);
 
 ?>
@@ -617,13 +616,6 @@ $result = mysqli_query($conn, $sql);
 
 
                  <form action="contact.php" method="post" class="wow fadeInUp" id="contact-form" role="form" data-wow-delay="0.8s">
-
-                      <!-- IF MAIL SENT SUCCESSFUL  // connect this with custom JS -->
-                      <!-- <h6 class="text-success">Your message has been sent successfully.</h6> -->
-                      
-                      <!-- IF MAIL NOT SENT -->
-                      <!-- <h6 class="text-danger">E-mail must be valid and message must be longer than 1 character.</h6> -->
-
                       <div class="col-md-6 col-sm-6">
                            <input type="text" class="form-control" id="cf-name" name="name" placeholder="Full name">
                       </div>
@@ -635,10 +627,26 @@ $result = mysqli_query($conn, $sql);
                       <div class="col-md-12 col-sm-12">
                            <input type="text" class="form-control" id="cf-subject" name="subject" placeholder="Subject">
 
-                           <textarea class="form-control" rows="6" id="cf-message" name="message" placeholder="Tell about your project"></textarea>
+                           <textarea class="form-control" rows="6" id="cf-message" name="message" placeholder="write your message "></textarea>
 
                            <button type="submit" class="form-control" id="cf-submit" name="submit">Send Message</button>
+                           <?php 
+                            $Message = "";
+                            if(isset($_GET['error']))
+                            {
+                              $Message = " Please Fill in the Blanks ";
+                                echo '<div class="alert alert-danger">'.$Message.'</div>';
+                            }
+
+                            if(isset($_GET['success']))
+                            {
+                              $Message = " Your Message Has Been Sent ";
+                                echo '<div class="alert alert-success">'.$Message.'</div>';
+                            }
+                        
+                        ?>
                       </div>
+                     
                  </form>
             </div>
 
@@ -783,8 +791,10 @@ $result = mysqli_query($conn, $sql);
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/jquery.min.js"></script> 
 <script src="assets/js/owl.carousel.min.js"></script>
-<script src="assets/js/vendors/jquery_3.4.1.js"></script>
-<script src="assets/js/vendors/link.min.js"></script>
+<!-- <script src="assets/js/vendors/jquery_3.4.1.js"></script> -->
+<script src="assets/js/link.min.js"></script>
+<!-- <script src="assets/js/form-validator.min.js"></script> -->
+<!-- <script src="assets/js/contact-form-script.js"></script> -->
  <!-- ALL JS FILES --> 
  <script src="assets/js/typer.js"></script>
  <script src="assets/js/app.js"></script>

@@ -1,6 +1,22 @@
 <?php
 include 'db.php';
+
+if(isset($_POST['submit'])){
+  if(empty($_POST['name']) || empty($_POST['email']) || empty($_POST['comment'])) {
+    die("Forget to fill something in?");
+  }
+  $_POST['comment'] = addslashes($_POST['comment']);
+  $sql="INSERT INTO testimonials
+  (`name`,`email`,`text`,`date`) VALUES ('".$_POST['name']."', '".$_POST['email']."', '".$_POST['comment']."', '".time()."')";
+  $result1=mysqli_query($conn,$sql);
+  if(!$result1)
+	{
+		die('error'.mysqli_error($conn));
+	}
+  header("Location: ".$_SERVER['PHP_SELF']);
+}
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,7 +28,10 @@ include 'db.php';
         <link rel="shortcut icon" href="assets/img/logo.png" type="image/icon" />
     <!-- Bootstrap -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">   
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet"> 
     <!-- Main style sheet -->
+    <link href="assets/css/responsive.css" rel="stylesheet">
+    <link href="assets/css/util.css" rel="stylesheet"> 
     <link href="assets/css/testi.css" rel="stylesheet">    
   </head>
 
@@ -30,11 +49,11 @@ include 'db.php';
             <span class="icon-bar"></span>
           </button>
           <!-- LOGO -->
-           <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="Logo img"></a>
+           <a class="navbar-brand" href="testimonials.php"><img src="assets/img/logo.png" alt="Logo img"></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav navbar-right mu-main-nav">
-            <li><a href="index.html">Acceuil</a></li>
+            <li><a href="index.php">Acceuil</a></li>
             <li class="active"><a href="testimonials.php">Testimonials</a></li>   
           </ul>                            
         </div><!--/.nav-collapse -->       
@@ -56,70 +75,39 @@ include 'db.php';
     </div>
   </section>
   <!-- End Blog banner -->  
-  <?php
-  if(isset($_POST['submit'])){
-      if(empty($_POST['name']) || empty($_POST['email']) || empty($_POST['comment'])) {
-        die("Forget to fill something in?");
-      }
-      $_POST['comment'] = addslashes($_POST['comment']);
-      $sql="INSERT INTO testimonial
-      (name,`email`,`text`,`norp`,`date`) VALUES ('".$_POST['name']."', '".$_POST['email']."', '".$_POST['comment']."', '".$_POST['norp']."', '".time()."')";
-      $result1=mysqli_query($conn,$sql);
-      if(!$result1)
-        {
-            die('error'.mysqli_error($conn));
-        }
-      header("Location: ".$_SERVER['PHP_SELF']);
-    }
-  ?>
   <section>
     <!-- Start testimonials  -->
-    <div class="contact-box-main">
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-8 col-sm-12">
-                  <div class="contact-form-right">
-                      <h2>GET IN TOUCH</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio justo, ultrices ac nisl sed, lobortis porta elit. Fusce in metus ac ex venenatis ultricies at cursus mauris.</p>
-                      <form id="contactForm">
-                          <div class="row">
-                              <div class="col-md-12">
-                                  <div class="form-group">
-                                      <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post"></form>
-                                      <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name">&nbsp;Name<br/>
-                                      <div class="help-block with-errors"></div>
-                                  </div>
-                              </div>
-                              <div class="col-md-12">
-                                  <div class="form-group">
-                                      <input type="text" placeholder="Your Email" id="email" class="form-control" name="name" required data-error="Please enter your email">&nbsp;Email<br/>
-                                      <div class="help-block with-errors"></div>
-                                  </div>
-                              </div>
-                              <div class="col-md-12">
-                                  <div class="form-group">
-                                      <select name="norp">
-                                          <option value="Positive">Positive</option>
-                                          <option value="Negative">Negative</option>
-                                          </select>
-                                      <div class="help-block with-errors"></div>
-                                  </div>
-                              </div>
-                              <div class="col-md-12">
-                                  <div class="form-group">
-                                      <textarea class="form-control " id="message" placeholder="Your Message" rows="4" data-error="Write your message" required></textarea>
-                                      <div class="help-block with-errors"></div>
-                                  </div>
-                                  <div class="submit-button text-center">
-                                      <button class="btn hvr-hover" id="submit" type="submit">Send Message</button>
-                                      <div id="msgSubmit" class="h3 text-center hidden"></div>
-                                      <div class="clearfix"></div>
-                                  </div>
-                              </div>
-                          </div>
-                      </form>
-                  </div>
-              </div>
+
+	<div class="container-contact100">
+	
+		<div class="wrap-contact100">
+			
+
+                                    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post"class="contact100-form validate-form flex-sb flex-w">
+                                    <span class="contact100-form-title">
+                                    laisser vos témoignages
+				</span>
+
+                                    <div class="wrap-input100 rs1 validate-input" data-validate = "Name is required">
+                      <input class="input100" type="text" name="name"placeholder="Name">
+<span class="focus-input100"></span>
+</div>
+<div class="wrap-input100 rs1 validate-input" data-validate = "Email is required: e@a.z">
+<input class="input100"  type="text" name="email"placeholder="Email Address">
+<span class="focus-input100"></span>
+</div>
+<div class="wrap-input100 validate-input" data-validate = "Message is required">
+<textarea class="input100"  name="comment"placeholder=" Comment"></textarea><br />
+<span class="focus-input100"></span>
+</div>
+<div class="container-contact100-form-btn">
+<button type="submit"  class="contact100-form-btn" name="submit">Send testimonials</button>
+</div>
+</form>	
+            <!-- </div> -->
+        </div>
+    </div>
+    <!-- End Cart -->
     </section>
   
   
@@ -174,7 +162,7 @@ include 'db.php';
             <!-- end col -->
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                 <div class="footer-box-b">
-                    <p>retourner a la page d'accueil</p>
+                    <p>Retourner a la page d'accueil</p>
                     <ul>
                         <li><a href="index.php" class="btn"> Acceuil</a></li>
                     </ul>
