@@ -30,11 +30,11 @@
 
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/animate.css" type="text/css" />
      <link rel="stylesheet" href="assets/css/owl.carousel.css">
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <!-- color -->
-    <!-- <link rel="stylesheet" href="css/colors/red.css"/> -->
+
 
 </head>
 
@@ -96,7 +96,7 @@
   <div class="container">
       <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-              <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+              <div class="wow fadeIn" data-aos-duration="1s" data-aos-delay="0.1s">
                   <h2 class="block-title"> Qui sommes nous </h2>
                   <h3>La vie d’aujourd’hui nous presse, nous stresse...</h3>
                   <p> L’heure
@@ -122,7 +122,7 @@
           </div>
           <!-- end col -->
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-              <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+              <div class="wow fadeIn" data-aos-duration="1s" data-aos-delay="0.1s">
                   <div class="about-images">
                       <img class="about-main" src="assets/img/about-main.jpg" alt="About Main Image">
                       <img class="about-inset" src="assets/img/about-inset.jpg" alt="About Inset Image">
@@ -190,8 +190,6 @@
     <ul>
       <li><a class="filter active" data-filter=".menu-restaurant">Show All</a></li>
       <li><a class="filter" data-filter=".breakfast">Nos Salades</a></li>
-      <!-- <li><a class="filter" data-filter=".dinner">Nos Plats Maisons</a></li>
-      <li><a class="filter" data-filter=".dinner">Boisson Et Jus</a></li> -->
       <li><a class="filter" data-filter=".lunch">Nos Plats</a></li>
       <li><a class="filter" data-filter=".dinner">Boisson Et Jus</a></li>
     </ul>
@@ -266,7 +264,7 @@
       <span class="clearfix">
         <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
         <span style="left: 166px; right: 44px;" class="menu-line"></span>
-        <span class="menu-price">$20.99</span>
+        <span class="menu-price">20.99DH</span>
       </span>
       <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
     </div>
@@ -275,7 +273,7 @@
       <span class="clearfix">
         <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
         <span style="left: 166px; right: 44px;" class="menu-line"></span>
-        <span class="menu-price">$20.99</span>
+        <span class="menu-price">20.99DH</span>
       </span>
       <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
     </div>
@@ -283,7 +281,7 @@
       <span class="clearfix">
         <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
         <span style="left: 166px; right: 44px;" class="menu-line"></span>
-        <span class="menu-price">$20.99</span>
+        <span class="menu-price">20.99DH</span>
       </span>
       <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
     </div>
@@ -291,7 +289,7 @@
       <span class="clearfix">
         <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
         <span style="left: 166px; right: 44px;" class="menu-line"></span>
-        <span class="menu-price">$20.99</span>
+        <span class="menu-price">20.99DH</span>
       </span>
       <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
     </div>
@@ -299,7 +297,7 @@
       <span class="clearfix">
         <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
         <span style="left: 166px; right: 44px;" class="menu-line"></span>
-        <span class="menu-price">$20.99</span>
+        <span class="menu-price">20.99DH</span>
       </span>
       <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
     </div>
@@ -307,7 +305,7 @@
       <span class="clearfix">
         <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
         <span style="left: 166px; right: 44px;" class="menu-line"></span>
-        <span class="menu-price">$20.99</span>
+        <span class="menu-price">20.99DH</span>
       </span>
       <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
     </div>
@@ -315,7 +313,7 @@
       <span class="clearfix">
         <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
         <span style="left: 166px; right: 44px;" class="menu-line"></span>
-        <span class="menu-price">$20.99</span>
+        <span class="menu-price">20.99DH</span>
       </span>
       <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
     </div>
@@ -323,7 +321,7 @@
       <span class="clearfix">
         <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
         <span style="left: 166px; right: 44px;" class="menu-line"></span>
-        <span class="menu-price">$20.99</span>
+        <span class="menu-price">20.99DH</span>
       </span>
       <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
     </div>
@@ -335,7 +333,7 @@
         <span style="left: 166px; right: 44px;" class="menu-line"></span>
         <span class="menu-price">6.00 DH</span>
       </span>
-      <!-- <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span> -->
+      
     </div>
 
     <div class="dinner menu-restaurant">
@@ -344,7 +342,7 @@
         <span style="left: 166px; right: 44px;" class="menu-line"></span>
         <span class="menu-price">10.00 DH</span>
       </span>
-      <!-- <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span> -->
+    
     </div>
     <div class="dinner menu-restaurant">
       <span class="clearfix">
@@ -366,7 +364,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                    <div class="wow fadeIn" data-aos-duration="1s" data-aos-delay="0.1s">
                         <h2 class="block-title text-center">
 						Nos Gallerie
 					</h2>
@@ -594,7 +592,7 @@ $result = mysqli_query($conn, $sql);
 <section id="contact" data-stellar-background-ratio="0.5">
   <div class="container">
        <div class="row">
-            <div class="wow fadeInUp col-md-6 col-sm-12" data-wow-delay="0.4s">
+            <div class="wow fadeInUp col-md-6 col-sm-12" data-aos-delay="0.4s">
                  <div id="google-map">
                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4796.741596173356!2d-6.820526679859715!3d33.97538739476045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda71391d5af06e7%3A0x80f2981c133d870b!2sKA%20FOOD%20SARL!5e0!3m2!1sfr!2sma!4v1595619052905!5m2!1sfr!2sma"
                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" 
@@ -605,7 +603,7 @@ $result = mysqli_query($conn, $sql);
             <div class="col-md-6 col-sm-12">
 
                  <div class="col-md-12 col-sm-12">
-                      <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
+                      <div class="section-title wow fadeInUp" data-aos-delay="0.1s">
                       <h2 class="block-title"> Contactez nous </h2>
                       </div>
                  </div>
@@ -615,7 +613,7 @@ $result = mysqli_query($conn, $sql);
 
 
 
-                 <form action="contact.php" method="post" class="wow fadeInUp" id="contact-form" role="form" data-wow-delay="0.8s">
+                 <form action="contact.php" method="post" class="wow fadeInUp" id="contact-form" role="form" data-aos-delay="0.8s">
                       <div class="col-md-6 col-sm-6">
                            <input type="text" class="form-control" id="cf-name" name="name" placeholder="Full name">
                       </div>
