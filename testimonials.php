@@ -10,10 +10,10 @@ if(isset($_POST['submit'])){
   (`name`,`email`,`text`,`date`) VALUES ('".$_POST['name']."', '".$_POST['email']."', '".$_POST['comment']."', '".time()."')";
   $result1=mysqli_query($conn,$sql);
   if(!$result1)
-	{
-		die('error'.mysqli_error($conn));
-	}
-  header("Location: ".$_SERVER['PHP_SELF']);
+  {
+    header('location:../index.php?error');
+  }
+  header("location:testimonials.php?success");
 }
 ?>
 
@@ -102,7 +102,22 @@ if(isset($_POST['submit'])){
 </div>
 <div class="container-contact100-form-btn">
 <button type="submit"  class="contact100-form-btn" name="submit">Send testimonials</button>
+
 </div>
+<?php 
+$Msg = "";
+                            if(isset($_GET['error']))
+                            {
+                                $Msg = " Please Fill in the Blanks ";
+                                echo '<div class="alert alert-danger">'.$Msg.'</div>';
+                            }
+                            if(isset($_GET['success']))
+                            {
+                                $Msg = " Your Message Has Been Sent ";
+                                echo '<div class="alert alert-success">'.$Msg.'</div>';
+                            }
+                        
+                        ?>
 </form>	
             <!-- </div> -->
         </div>
